@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Newsreader";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/newsreader-500.woff2") format("woff2");
+}
+
 :root {
   --bg: #FBFBF9;
   --ink: #1D1D1F;
@@ -73,7 +81,7 @@ nav.top {
 
 .mark {
   font-weight: 600;
-  font-size: 15px;
+  font-size: 18px;
   letter-spacing: 0.02em;
   text-decoration: none;
 }
@@ -81,7 +89,7 @@ nav.top {
 .navlinks {
   display: flex;
   gap: 26px;
-  font-size: 14px;
+  font-size: 16px;
   color: var(--ink-soft);
 }
 
@@ -107,8 +115,19 @@ nav.top {
   padding: 56px 0 88px;
 }
 
+h1.hero-title {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 500;
+  font-size: clamp(44px, 5.5vw, 72px);
+  line-height: 1.05;
+  letter-spacing: -0.005em;
+  color: var(--ink);
+  margin: 0 0 24px;
+  text-wrap: balance;
+}
+
 p.bio {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.7;
   color: var(--ink);
   max-width: 80ch;
@@ -127,7 +146,7 @@ p.bio a:hover {
 }
 
 .contact-line {
-  font-size: 15px;
+  font-size: 17px;
   color: var(--ink-soft);
   margin: 0 0 22px;
   line-height: 1.7;
@@ -148,7 +167,7 @@ p.bio a:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 10px 22px;
-  font-size: 15px;
+  font-size: 17px;
   margin: 0 0 48px;
 }
 
@@ -206,7 +225,7 @@ section.outputs {
 }
 
 .outputs .kicker {
-  font-size: 13px;
+  font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 0.09em;
   color: var(--ink-soft);
@@ -223,7 +242,7 @@ section.outputs {
 }
 
 .outputs-panel p {
-  font-size: 15.5px;
+  font-size: 17px;
   line-height: 1.6;
   max-width: 50ch;
   margin: 0 auto;
@@ -244,7 +263,7 @@ article.about {
 }
 
 article.about p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.7;
   color: var(--ink);
   margin: 0 0 22px;
@@ -339,7 +358,7 @@ blockquote.quote {
 }
 
 blockquote.quote p {
-  font-size: 18px;
+  font-size: 20px;
   font-style: italic;
   line-height: 1.5;
   margin: 0 0 8px;
