@@ -58,7 +58,7 @@ nav.top,
 .wrap {
   max-width: 1240px;
   margin: 0 auto;
-  padding: 0 64px;
+  padding: 0 clamp(20px, 6vw, 64px);
 }
 
 /* nav */
@@ -66,7 +66,7 @@ nav.top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 32px 64px;
+  padding: 28px clamp(20px, 6vw, 64px);
   max-width: 1240px;
   margin: 0 auto;
 }
@@ -180,6 +180,8 @@ p.bio a:hover {
 @media (max-width: 760px) {
   .hero {
     grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 40px 0 64px;
   }
 
   .portrait-holder {
