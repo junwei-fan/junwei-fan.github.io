@@ -167,13 +167,17 @@ p.bio a:hover {
 .portrait-holder {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .portrait-holder img {
   width: min(220px, 100%);
+  height: min(220px, 100%);
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   object-fit: cover;
+  flex-shrink: 0;
+  display: block;
   box-shadow: 0 6px 20px -4px rgba(0, 0, 0, 0.25);
 }
 
@@ -191,6 +195,7 @@ p.bio a:hover {
 
   .portrait-holder img {
     width: 140px;
+    height: 140px;
   }
 }
 
