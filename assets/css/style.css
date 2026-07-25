@@ -6,6 +6,15 @@
   src: url("../fonts/newsreader-500.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: "Noto Serif SC";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/noto-serif-sc-500.woff2") format("woff2");
+  unicode-range: U+4fca, U+73ae, U+8303;
+}
+
 :root {
   --bg: #FBFBF9;
   --ink: #1D1D1F;
@@ -84,6 +93,11 @@ nav.top {
   font-size: 18px;
   letter-spacing: 0.02em;
   text-decoration: none;
+}
+
+.mark .cjk {
+  font-family: "Noto Serif SC", serif;
+  font-weight: 500;
 }
 
 .navlinks {
