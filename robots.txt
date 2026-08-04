@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://junwei-fan.github.io/sitemap.xml
