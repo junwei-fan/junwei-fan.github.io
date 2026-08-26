@@ -281,7 +281,15 @@ section.outputs {
   letter-spacing: 0.09em;
   color: var(--ink-soft);
   font-weight: 600;
-  margin: 16px 0 24px;
+  margin: 16px 0 6px;
+}
+
+.section-title {
+  font-size: clamp(23px, 2.4vw, 29px);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin: 0 0 24px;
 }
 
 .outputs-panel {
